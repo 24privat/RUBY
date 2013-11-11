@@ -120,3 +120,12 @@ def describe_favorites(*games)
   end
 end
 describe_favorites('Mario', 'Contra', 'Metroid')
+
+5.
+class Game
+  def initialize(name, options={})
+    @name = name
+    @year = options[:year]
+    @system = options[:system]
+  end
+end
