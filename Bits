@@ -1,4 +1,4 @@
-level 1
+LEVEL 1
 
 1.
 games = ["Super Mario Bros.", "Contra", "Metroid", "Mega Man 2"]
@@ -70,3 +70,16 @@ puts search(games, "Contra")
 def search_index(games, search_term)
   search_index = games.find_index(search_term) or "Not Found"
 end
+
+
+LEVEL 2
+
+1.
+def new_game(name, year=nil, system=nil )
+  {
+    name: name,
+    year: year,
+    system: system
+  }
+end
+game = new_game("Street Figher II")
