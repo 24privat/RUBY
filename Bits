@@ -65,3 +65,8 @@ end
 
 games = ["Super Mario Bros.", "Contra", "Metroid", "Mega Man 2"]
 puts search(games, "Contra")
+
+8.
+def search_index(games, search_term)
+  search_index = games.find_index(search_term) or "Not Found"
+end
