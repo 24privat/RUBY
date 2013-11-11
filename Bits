@@ -195,6 +195,6 @@ class Library
     false
   end
    def add_game (game)
-    @games << games
+    @games << game
   end
 end
