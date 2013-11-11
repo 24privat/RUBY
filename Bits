@@ -1,4 +1,4 @@
-LEVEL 1
+------LEVEL 1------
 
 1.
 games = ["Super Mario Bros.", "Contra", "Metroid", "Mega Man 2"]
@@ -72,7 +72,7 @@ def search_index(games, search_term)
 end
 
 
-LEVEL 2
+------LEVEL 2------
 
 1.
 def new_game(name, year=nil, system=nil )
