@@ -232,3 +232,15 @@ end
  class ConsoleGame < Game
 end
 
+6.
+class ArcadeGame < Game
+  attr_accessor :weight
+  def initialize (name, options={})
+    super
+    self.weight = options[:weight]
+    
+  end
+end
+class ConsoleGame < Game
+end
+
