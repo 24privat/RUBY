@@ -224,3 +224,11 @@ class Library
     puts massege
   end
 end
+
+5.
+
+class ArcadeGame < Game
+end
+ class ConsoleGame < Game
+end
+
