@@ -244,3 +244,10 @@ end
 class ConsoleGame < Game
 end
 
+7.
+class ConsoleGame < Game
+  def to_s 
+    "#{self.name} - #{self.system}"    
+  end
+
+end
