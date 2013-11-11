@@ -163,3 +163,19 @@ class Library
     @games = games
   end
 end
+
+2.
+class Library
+  attr_accessor :games
+
+  def initialize(games)
+    self.games = games
+  end
+
+  def has_game?(search_name)
+    for game in games
+      return true if game == search_name
+    end
+    false
+  end
+end
