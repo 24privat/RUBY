@@ -83,3 +83,16 @@ def new_game(name, year=nil, system=nil )
   }
 end
 game = new_game("Street Figher II")
+
+2.
+def new_game(name, options ={})
+  {
+    name: name,
+    year: options[:year],
+    system: options[:system]
+  }
+end
+game = new_game("Street Figher II", 
+                :year=>"SNES", 
+                :system=>1992
+  )
