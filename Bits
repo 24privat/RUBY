@@ -368,4 +368,13 @@ end
 game = Game.new("Contra")
 GameUtils.lend_to_friend(game, "gregg@codeschool.com")
 
+2.
+class Game
+  include GameUtils
+end
+
+
+game = Game.new("contra")
+game.lend_to_friend("Gregg")
+
 
