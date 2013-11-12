@@ -323,3 +323,15 @@ luigi_favorite = {
 
 puts difference_between(mario_favorite, luigi_favorite)
 
+5.
+def exclude_character(games, character)
+  games.except(character)
+end
+
+games = {
+  mario: ["Super Mario World", "Super Smash Bros. Melee"],
+  luigi: ["Luigi's Mansion"],
+  yoshi: ["Yoshi's Island", "Yoshi's Story"]
+}
+puts exclude_character(games, :yoshi)
+
