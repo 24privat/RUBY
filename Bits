@@ -349,3 +349,10 @@ end
 games = ["Super Mario Bros.", "Contra", "Metroid", "Mega Man 2"]
 puts describe_count(games)
 
+7.
+def convert_title(title)
+  title.titleize
+end
+
+puts convert_title("super mario bros.")
+
