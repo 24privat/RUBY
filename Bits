@@ -295,3 +295,14 @@ end
 games = ["Super Mario Bros.", "Contra", "Metroid", "Mega Man 2"]
 puts first_games(games,2)
 
+3.
+def anniversary(game, years)
+  game[:release].advance(years: years)
+end
+
+game = {
+  name: 'Contra',
+  release: DateTime.new(1987, 2, 20, 0, 0, 0)
+}
+puts anniversary(game,20 )
+
