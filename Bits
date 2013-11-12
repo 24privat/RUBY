@@ -377,4 +377,11 @@ end
 game = Game.new("contra")
 game.lend_to_friend("Gregg")
 
+3.
+class Game
+  extend GameUtils
+end
+
+Game.find_all_from_user("Gregg")
+
 
