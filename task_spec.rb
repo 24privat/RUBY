@@ -23,3 +23,19 @@ end
     zombie.latest_tweet.should == tweet
   end
 end
+
+
+-- LEVEL 4 --
+
+1. describe Zombie do
+  let(:zombie) { Zombie.new }
+  subject { zombie }
+  before{zombie.eat_brains}
+  it 'is not a dummy zombie' do
+     zombie.should_not be_dummy
+  end
+
+  it 'is a genius zombie' do
+    zombie.should be_genius
+  end
+end
