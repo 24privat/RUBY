@@ -11,4 +11,15 @@
   end
 end
 
-4.
+4. describe Zombie do
+  let(:zombie) { Zombie.new(tweets: [tweet]) }
+  let(:tweet) { Tweet.new }
+
+  subject { zombie }
+
+  its(:tweets) { should include(tweet) }
+
+  it "should have a latest tweet" do
+    zombie.latest_tweet.should == tweet
+  end
+end
