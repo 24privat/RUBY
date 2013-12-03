@@ -586,4 +586,4 @@ class Game
       puts "Emulator failed: #{e}"
     end
   end
-end
+end 
